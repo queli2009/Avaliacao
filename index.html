@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="form-wrapper">
+      <div class="form-header">
+        <i class="fas fa-user-plus"></i>
+        <h1>Cadastro de Usuário</h1>
+        <p>Preencha seus dados pessoais</p>
+      </div>
+
+      <form id="cadastroForm" class="form">
+        <div class="form-group">
+          <label for="nome">
+            <i class="fas fa-user"></i>
+            Nome *
+          </label>
+          <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+          <span class="error-message" id="nome-error"></span>
+        </div>
+        <div class="form-group">
+            <label for="sobrenome">
+                <i class="fas fa-user"></i>
+                sobrenome *
+            </label>
+            <input type="text" id="sobrenome" name="sobrenome" required placeholder="Digite seu sobrenome">   
+            <span class="error-message" id="sobrenome-error"></span>     
+
+</div>
+
+<div class="form-group">
+    <label for="dataNascimento">
+        <i class=" fas form-group"></i>
+        Data de Nascimento*
+    </label>
+    <input type="date" id="dataNascimento" name="dataNascimento" required>
+    <span class="error-message" id="data-error"></span>
+</div>
+
+<div class="form-group">
+    <label for="sexo">
+        <i class="fas fa-venus-mars"></i>
+        Sexo*
+    </label>
+    <select id="sexo" name="sexo" required>
+        <option value="">Selecione uma opção</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+    </select>
+</div>
+
+
+        
+  </div>
+</body>
+</html>
